@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0F8CB847-CF11-4629-A3FF-935C457FA36B}</ProjectGuid>
+    <ProjectGuid>{16F8CBDB-3ABA-43BD-BA33-053D235364C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ElevenNote.Services</RootNamespace>
-    <AssemblyName>ElevenNote.Services</AssemblyName>
+    <RootNamespace>ElevenNote.Data</RootNamespace>
+    <AssemblyName>ElevenNote.Data</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
