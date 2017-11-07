@@ -13,5 +13,10 @@ namespace ElevenNote.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
