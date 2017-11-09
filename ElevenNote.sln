@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Web", "ElevenNote.Web\ElevenNote.Web.csproj", "{13E3ED73-D8D5-4703-B47F-15BEA320D6DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Services", "ElevenNote.Services\ElevenNote.Services.csproj", "{57E3ACB7-2F5B-4972-8D57-B511BE4C77A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Models", "ElevenNote.Models\ElevenNote.Models.csproj", "{D5DCB2C0-70FD-4245-B99E-7837B9D92E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Data", "ElevenNote.Data\ElevenNote.Data.csproj", "{B380A1C5-9FDE-4F17-93B6-5682C2A7A11D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{13E3ED73-D8D5-4703-B47F-15BEA320D6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13E3ED73-D8D5-4703-B47F-15BEA320D6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13E3ED73-D8D5-4703-B47F-15BEA320D6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57E3ACB7-2F5B-4972-8D57-B511BE4C77A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57E3ACB7-2F5B-4972-8D57-B511BE4C77A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57E3ACB7-2F5B-4972-8D57-B511BE4C77A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57E3ACB7-2F5B-4972-8D57-B511BE4C77A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5DCB2C0-70FD-4245-B99E-7837B9D92E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DCB2C0-70FD-4245-B99E-7837B9D92E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DCB2C0-70FD-4245-B99E-7837B9D92E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DCB2C0-70FD-4245-B99E-7837B9D92E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B380A1C5-9FDE-4F17-93B6-5682C2A7A11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B380A1C5-9FDE-4F17-93B6-5682C2A7A11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B380A1C5-9FDE-4F17-93B6-5682C2A7A11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B380A1C5-9FDE-4F17-93B6-5682C2A7A11D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
