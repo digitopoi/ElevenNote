@@ -9,7 +9,6 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ElevenNote.Web.Models;
-using ElevenNote.Data;
 
 namespace ElevenNote.Web.Controllers
 {
