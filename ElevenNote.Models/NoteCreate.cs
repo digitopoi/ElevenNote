@@ -12,11 +12,10 @@ namespace ElevenNote.Models
         [Required]
         public string Title { get; set; }
 
+        [Required]
+        [MaxLength(8000)]
         public string Content { get; set; }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        public override string ToString() => Title;
     }
 }
