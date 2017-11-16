@@ -52,10 +52,8 @@ namespace ElevenNote.Web.Controllers
         }
 
         public ActionResult Details(int id)
-        {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new NoteService(userId);
-            var model = service.GetNoteById(id);
+        { 
+            var model = CreateNoteService().GetNoteById(id);
 
             return View(model);
         }
