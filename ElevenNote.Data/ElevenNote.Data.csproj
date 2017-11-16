@@ -70,6 +70,10 @@
     <Compile Include="Migrations\201711160542174_RemoveStarred.Designer.cs">
       <DependentUpon>201711160542174_RemoveStarred.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711162017174_AddIsStarredToNote.cs" />
+    <Compile Include="Migrations\201711162017174_AddIsStarredToNote.Designer.cs">
+      <DependentUpon>201711162017174_AddIsStarredToNote.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NoteEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711160542174_RemoveStarred.resx">
       <DependentUpon>201711160542174_RemoveStarred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711162017174_AddIsStarredToNote.resx">
+      <DependentUpon>201711162017174_AddIsStarredToNote.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
