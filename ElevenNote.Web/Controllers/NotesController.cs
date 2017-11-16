@@ -47,6 +47,9 @@ namespace ElevenNote.Web.Controllers
                 return View(model);
             }
 
+            //  lasts for shorter period than session
+            TempData["SaveResult"] = "Your note was created";
+
             return RedirectToAction("Index");
 
         }
@@ -91,6 +94,9 @@ namespace ElevenNote.Web.Controllers
                 ModelState.AddModelError("", "Unable to update note");
                 return View(model);
             }
+
+            //  like session, but stored for a shorter period
+            TempData["SaveResult"] = "Your note was saved";
 
             return RedirectToAction("Index");
 
