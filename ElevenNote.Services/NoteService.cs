@@ -50,7 +50,6 @@ namespace ElevenNote.Services
                         .SingleOrDefault(e => e.OwnerId == _userId && e.NoteId == noteId);
             }
 
-            //  TODO: Handle note not found
             if (entity == null) return new NoteDetailViewModel();
 
             return
@@ -89,13 +88,13 @@ namespace ElevenNote.Services
 
         public bool UpdateNote(NoteEditViewModel model)
         {
-            NoteEntity entity;
-
             using (var context = new ElevenNoteDbContext())
             {
-                entity = context
+                var entity = context
                     .Notes
                     .SingleOrDefault(e => e.NoteId == model.NoteId && e.OwnerId == _userId);
+
+                if (entity == null) return false;
 
                 entity.Title = model.Title;
                 entity.Content = model.Content;
@@ -104,23 +103,28 @@ namespace ElevenNote.Services
                 return context.SaveChanges() == 1;
             }
 
-             
         }
-        //public bool DeleteNote(int noteId)
-        //{
-        //    using (var context = new ElevenNoteDbContext())
-        //    {
-        //        var entity = context
-        //                        .Notes
-        //                        .Single(e => e.OwnerId == _userId && e.NoteId == noteId);
 
-        //        //  TODO: Handle not found
+        private NoteEntity GetNoteFromDatabase(ElevenNoteDbContext context, int noteId)
+        {
+            return context
+                    .Notes
+                    .Single(e => e.OwnerId == _userId && e.NoteId == noteId);
+        }
 
-        //        context.Notes.Remove(entity);
+        public bool DeleteNote(int noteId)
+        {
+            using (var context = new ElevenNoteDbContext())
+            {
+                var entity = GetNoteFromDatabase(context, noteId);
 
-        //        return context.SaveChanges() == 1;
-        //    }
+                if (entity == null) return false;
 
-        //}
+                context.Notes.Remove(entity);
+
+                return context.SaveChanges() == 1;
+            }
+
+        }
     }
 }
