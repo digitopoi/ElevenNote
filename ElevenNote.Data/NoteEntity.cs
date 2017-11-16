@@ -20,9 +20,9 @@ namespace ElevenNote.Data
         [MaxLength(500)]
         public string Content { get; set; }
 
-        //[Required]
-        //[DefaultValue(false)]
-        //public bool IsStarred { get; set; }
+        [Required]
+        [DefaultValue(false)]
+        public bool IsStarred { get; set; }
 
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
