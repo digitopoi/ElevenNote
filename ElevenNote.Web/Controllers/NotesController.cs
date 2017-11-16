@@ -13,6 +13,14 @@ namespace ElevenNote.Web.Controllers
     [Authorize]
     public class NotesController : Controller
     {
+        private NoteService CreateNoteService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new NoteService(userId);
+
+            return service;
+        }
+
         // GET: Notes
         public ActionResult Index()
         {
