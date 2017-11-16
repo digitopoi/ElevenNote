@@ -1,35 +1,28 @@
 ﻿using System;
-using System.ComponentModel;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Web;
 
-namespace ElevenNote.Data
+namespace ElevenNote.Models
 {
-    [Table("Notes")]
-    public class NoteEntity
+    public class NoteListItemViewModel
     {
-        [Key]
         public int NoteId { get; set; }
 
-        [Required]
-        public Guid OwnerId { get; set; }
-
-        [Required]
         public string Title { get; set; }
 
-        [MaxLength(500)]
         public string Content { get; set; }
 
-        //[Required]
-        //[DefaultValue(false)]
+        //[Display(Name = "Starred")]
+        //[UIHint("Starred")]
         //public bool IsStarred { get; set; }
 
-        [Required]
+        [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
 
         public DateTimeOffset? ModifiedUtc { get; set; }
 
         public override string ToString() => $"[{NoteId}] {Title}";
-
     }
 }
