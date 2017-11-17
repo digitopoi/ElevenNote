@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     color: #41414a;
+    font-weight: 400;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -30,6 +31,7 @@ textarea {
 
 .navbar-inverse .navbar-brand {
     color: #fff;
+    font-weight: 700;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -37,5 +39,6 @@ textarea {
 }
 
 .glyphicon-star {
-    color: #d4ac0d;
+    color: #fdff00;
+    text-shadow: 0 0 .5px black, 0 0 .5px black, 0 0 .5px black, 0 0 .5px black;
 }

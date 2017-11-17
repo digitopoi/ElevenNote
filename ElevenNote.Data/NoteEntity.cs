@@ -9,6 +9,7 @@ namespace ElevenNote.Data
     public class NoteEntity
     {
         [Key]
+        [Display(Name = "Id")]
         public int NoteId { get; set; }
 
         [Required]
